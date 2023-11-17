@@ -1,6 +1,7 @@
+import type { Metadata } from 'next';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Whatsapp Linker',
   description: 'Generador de links de whatsapp',
 };
@@ -11,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className="container-fluid vh-100 text-center"
         style={{
