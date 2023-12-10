@@ -1,3 +1,7 @@
+import clsx from 'clsx';
+
+import { lusitana } from '@/fonts/fonts';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
@@ -11,9 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className="container-fluid vh-100 text-center"
+        className={clsx([
+          'container-fluid vh-100 text-center',
+          lusitana.className,
+        ])}
         style={{
           background:
             'linear-gradient(0deg, rgba(220,248,198,1) 0%, rgba(7,94,84,1) 100%)',
